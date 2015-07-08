@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/ortth/orchstrator/issues"
   },
-  "homepage": "https://github.com/ortth/orchstrator#readme"
+  "homepage": "https://github.com/ortth/orchstrator#readme",
+  "dependencies": {
+    "express": "^4.13.1",
+    "express-react-views": "^0.8.1",
+    "mongoose": "^4.0.6",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3"
+  }
 }
