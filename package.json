@@ -1,0 +1,19 @@
+{
+  "name": "orchstrator",
+  "version": "1.0.0",
+  "description": "Yah, just another xperimmmenttt!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ortth/orchstrator.git"
+  },
+  "author": "Lucas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ortth/orchstrator/issues"
+  },
+  "homepage": "https://github.com/ortth/orchstrator#readme"
+}
