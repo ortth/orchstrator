@@ -1,26 +1,22 @@
 import React from 'react';
+import Layout from './layout';
 
-class Layout extends React.Component {
+class Index extends React.Component {
 
   static propTypes = {
-    title: React.Proptypes.string
-  }
+    title: React.Proptypes.string,
+    list: React.Proptypes.array
+  },
 
   render() {
     return(
-      <html>
-        <head>
-          <title>{this.props.title}</title>
-          <link rel="stylesheet" href="/css/main.css" />
-        </head>
-        <body>
-          {this.props.children}
-          <script src="/scripts/app.min.js"></script>
-        </body>
-      </html>
-    )
+      <Layout title={this.props.title}>
+        <h1>{this.props.title}</h1>
+        <p>Copyright (c) 2015 Copyright Holder All Rights Reserved.</p>
+      </Layout>
+    );
   }
 
 }
 
-export default Layout;
+export default Index;
