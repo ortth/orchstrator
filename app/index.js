@@ -4,7 +4,7 @@ var koa = require('koa');
 var app = koa();
 
 var viewpath = path.join(__dirname, 'views');
-var assetpath = path.join(__dirname, 'public');
+var assetspath = path.join(__dirname, 'public');
 
 app.use(function *(next) {
   var start = new Date;
@@ -15,6 +15,16 @@ app.use(function *(next) {
 
 app.use(function *() {
   this.body = 'Hello, Koa!';
+});
+
+react(app, {
+  views: viewpath,
+  babel: {
+    only: [
+      viewpath,
+      assetspath
+    ]
+  }
 });
 
 app.listen(3000);
