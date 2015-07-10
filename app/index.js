@@ -1,21 +1,11 @@
 var react = require('koa-react-view');
+var staticCache = require('koa-static-cache');
 var path = require('path');
 var koa = require('koa');
 var app = koa();
 
 var viewpath = path.join(__dirname, 'views');
-var assetspath = path.join(__dirname, 'public');
-
-app.use(function *(next) {
-  var start = new Date;
-  yield next;
-  var ms = new Date - start;
-  console.log('%s %s - %s', this.method, this.url, ms);
-});
-
-app.use(function *() {
-  this.body = 'Hello, Koa!';
-});
+var assetspath = path.join(__dirname, 'assets');
 
 react(app, {
   views: viewpath,
@@ -27,4 +17,17 @@ react(app, {
   }
 });
 
+app.use(staticCache(assetspath));
+
+app.use(function *() {
+  this.render('index', {
+    title: 'List',
+    list: [
+      'Hello Koa!',
+      'Hello React!'
+    ]
+  });
+});
+
 app.listen(3000);
+console.log('Go to http://localhost:3000');
