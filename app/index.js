@@ -5,7 +5,7 @@ var koa = require('koa');
 var app = koa();
 
 var viewpath = path.join(__dirname, 'views');
-var assetspath = path.join(__dirname, 'assets');
+var assetspath = path.join(__dirname, '../build');
 
 react(app, {
   views: viewpath,
