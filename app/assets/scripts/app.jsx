@@ -1,8 +1,8 @@
 import React from 'react';
 import Router from 'react-router';
 import {Route, RouteHandler, Link, DefaultRoute, NotFoundRoute} from 'react-router';
-import Home from './components/views/home';
-import About from './components/views/about';
+import {Home} from './components/views/home';
+import {About} from './components/views/about';
 
 /**
  * App Class component

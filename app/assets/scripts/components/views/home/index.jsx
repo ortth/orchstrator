@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-class Home extends React.Component {
+export class Home extends React.Component {
 
   render() {
     return (
@@ -13,5 +13,3 @@ class Home extends React.Component {
   }
 
 };
-
-export default Home;
