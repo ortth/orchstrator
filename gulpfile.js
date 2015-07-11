@@ -34,6 +34,6 @@ gulp.task('js:watch', function() {
 });
 
 // Trigger tasks
-gulp.task('build', ['sass', 'js', 'img']);
+gulp.task('build', ['sass', 'js']);
 gulp.task('watch', ['build', 'sass:watch', 'js:watch']);
 gulp.task('default', ['build']);
