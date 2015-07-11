@@ -2,6 +2,7 @@
 
 var react = require('koa-react-view');
 var staticCache = require('koa-static-cache');
+var router = require('koa-router')();
 var path = require('path');
 var koa = require('koa');
 var app = koa();
@@ -21,7 +22,11 @@ react(app, {
 
 app.use(staticCache(assetspath));
 
-app.use(function *() {
+// app.use(function *() {
+//   this.render('index', {title: 'Orchstator'});
+// });
+
+router.get('/', function *(next) {
   this.render('index', {title: 'Orchstator'});
 });
 
