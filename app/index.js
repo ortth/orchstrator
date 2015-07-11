@@ -24,10 +24,6 @@ react(app, {
 
 app.use(staticCache(assetspath));
 
-// app.use(function *() {
-//   this.render('index', {title: 'Orchstator'});
-// });
-
 router.get('/', function *(next) {
   this.render('index', {title: 'Orchstator'});
 });
