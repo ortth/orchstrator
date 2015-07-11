@@ -1,7 +1,19 @@
 import React from 'react';
 
+/**
+ * Layout Class component
+ * @class
+ *
+ * @return {Component}
+ **/
 class Layout extends React.Component {
 
+  /**
+   * Render method
+   * @method
+   *
+   * @return {Component}
+   **/
   render() {
     return(
       <html>
