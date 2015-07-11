@@ -1,3 +1,5 @@
+'use strict';
+
 var react = require('koa-react-view');
 var staticCache = require('koa-static-cache');
 var path = require('path');
