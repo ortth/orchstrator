@@ -5,8 +5,10 @@ export class About extends React.Component {
 
   render() {
     return (
-      <h1>About page!</h1>
-      <Link to="/">Home</Link>
+      <div className="c-about-content">
+        <h1>About page!</h1>
+        <Link to="/">Home</Link>
+      </div>
     );
   }
 
