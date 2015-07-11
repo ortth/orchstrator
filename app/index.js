@@ -3,6 +3,7 @@
 var react = require('koa-react-view');
 var staticCache = require('koa-static-cache');
 var router = require('koa-router')();
+var morgan = require('koa-morgan');
 var path = require('path');
 var koa = require('koa');
 var app = koa();
@@ -22,6 +23,7 @@ react(app, {
   }
 });
 
+app.use(morgan.middleware('dev'));
 app.use(staticCache(assetspath));
 
 router.get('/', function *(next) {
