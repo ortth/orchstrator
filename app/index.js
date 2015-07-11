@@ -20,13 +20,7 @@ react(app, {
 app.use(staticCache(assetspath));
 
 app.use(function *() {
-  this.render('index', {
-    title: 'List',
-    list: [
-      'Hello Koa!',
-      'Hello React!'
-    ]
-  });
+  this.render('index', {title: 'Orchstator'});
 });
 
 app.listen(3000);
