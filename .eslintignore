@@ -1,0 +1,7 @@
+build/
+node_modules/*
+database
+gulpfile.js
+package.json
+README.md
+webpack.config.js
