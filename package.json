@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/ortth/orchstrator#readme",
   "dependencies": {
-    "koa": "^0.21.0",
+    "koa": "^1.0.0",
     "koa-morgan": "^0.3.0",
     "koa-qs": "^2.0.0",
     "koa-react-view": "^1.0.2",
@@ -26,7 +26,7 @@
     "koa-trace": "^1.0.0",
     "mongoose": "^4.0.6",
     "react": "^0.13.3",
-    "react-router": "^0.13.3"
+    "react-router": "^1.0.0-rc1"
   },
   "devDependencies": {
     "babel": "^5.6.14",
@@ -34,7 +34,7 @@
     "babel-loader": "^5.3.1",
     "gulp": "^3.9.0",
     "gulp-if": "^1.2.5",
-    "gulp-load-plugins": "^0.10.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
     "gulp-minify-css": "^1.2.0",
     "gulp-sass": "^2.0.3",
     "minimist": "^1.1.1",
